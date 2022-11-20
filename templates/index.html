@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Buy Item 1</title>
+  </head>
+  <body>
+        {% for item in items %}
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.price }}</p>
+            <a href="/items/{{ item.id }}/"> Перейти</a>
+
+        {% endfor %}
+  </body>
+</html>
